@@ -8,7 +8,6 @@ module.exports.listToys = () => {
   return new Promise( (resolve, reject) => {
     db.all('SELECT * FROM toys', function(err, data) {
       if (err) return reject (err);
-      console.log(data);
       resolve(data);
     });
   });
