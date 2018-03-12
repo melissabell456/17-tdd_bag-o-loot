@@ -14,8 +14,10 @@ if (arg[0] === "add") {
     console.log(`${arg[1]} was added for ${arg[2]}`);
   });
 }
+else if (arg[0] === "ls" && !arg[1]) {
+  // node lootbag.js ls suzy
+}
 else if (arg[0] === "remove") {
-  // node lootbag.js remove suzy kite
   console.log(`{{toy: ${arg[2]}, name: ${arg[1]}}`)
   removeToy( {toy: arg[2], name: arg[1]} )
   .then( (data) => {
