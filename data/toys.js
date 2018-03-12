@@ -6,5 +6,5 @@ module.exports.toys = [
   { name: 'Jade', toy: 'shovels', delivered: 0, naughty: 0},
   { name: 'Jade', toy: 'tennis ball', delivered: 0, naughty: 0},
   { name: 'Laia', toy: 'plush carrot', delivered: 0, naughty: 0},
-  { name: 'Laia', toy: 'bone', delivered: 0, naughty: 0},
+  { name: 'Laia', toy: 'bone', delivered: 0, naughty: 0}
 ]
