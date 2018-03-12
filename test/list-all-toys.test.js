@@ -11,7 +11,6 @@ describe('list all toys module', () => {
       .then( (returnedData) => {
         isArray(returnedData, 'data should be in an array');
         for (let i = 0; i < returnedData.length; i++) {
-          // console.log(returnedData[i])
           isObject(returnedData[i], 'all contents returned should be an object');
           hasAllKeys(returnedData[i], [ 'toy_id', 'name', 'toy', 'delivered', 'naughty' ], 'each object returned should have these keys');
       };
