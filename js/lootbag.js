@@ -23,6 +23,18 @@ else if (arg[0] === "ls" && arg.length === 2) {
     console.log(`${arg[1]}'s Christmas list: ${childsList}`);
   })
 }
+else if (arg[1] === "delivered") {
+  // node lootbag.js delivered suzy
+  console.log('gonna get kids delivered presents', arg[0], arg[1]);
+  // listKidsToys(arg[1])
+  // .then( (data) => {
+  //   let childsList = [];
+  //   data.forEach( (toy) => {
+  //     childsList.push(toy.toy);
+  //   })
+  //   console.log(`${arg[1]}'s Christmas list: ${childsList}`);
+  // })
+}
 else if (arg[0] === "remove") {
   console.log(`{{toy: ${arg[2]}, name: ${arg[1]}}`)
   removeToy( {toy: arg[2], name: arg[1]} )
