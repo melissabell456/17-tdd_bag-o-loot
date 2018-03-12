@@ -5,7 +5,6 @@ const db = new sqlite3.Database('bag.sqlite', (err) => {
 });
 
 module.exports.listKidsToys = (name) => {
-  console.log("name", name);
   return new Promise( (resolve, reject) => {
     db.all(`SELECT * FROM toys WHERE name="${name}"`, function(err, data) {
       if (err) return reject (err);

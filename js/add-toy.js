@@ -8,7 +8,6 @@ const db = new sqlite3.Database('bag.sqlite', (err) => {
 
 
 module.exports.addToy = ({ toy, name }) => {
-  console.log("I am in addToy", toy, name);
   return new Promise( (resolve, reject) => {
     db.run(`INSERT INTO toys VALUES (null, "${name}", "${toy}", 0, 0)`, function (err) {
       if (err) return reject(err);

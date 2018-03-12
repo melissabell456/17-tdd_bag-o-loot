@@ -28,8 +28,5 @@ describe('list-toys module', () => {
         }
       })
     });
-    // it('should retrieve an array of only one kids toys', () => {
-
-    // })
   })
 });

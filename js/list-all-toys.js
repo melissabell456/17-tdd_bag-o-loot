@@ -5,11 +5,9 @@ const db = new sqlite3.Database('bag.sqlite', (err) => {
 });
 
 module.exports.listToys = () => {
-  console.log('in list toys');
   return new Promise( (resolve, reject) => {
     db.all('SELECT * FROM toys', function(err, data) {
-      if (err) return reject (err);
-      console.log(data);
+      if (err) return reject (err); 
       resolve(data);
     });
   });

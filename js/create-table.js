@@ -3,7 +3,6 @@ const db = new sqlite3.Database('bag.sqlite');
 const { toys } = require('../data/toys');
 
 module.exports.createTable = () => {
-  console.log("in here");
   return new Promise( (resolve, reject) => {
     db.run('DROP TABLE IF EXISTS toys')
     .run(
